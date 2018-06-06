@@ -1,2 +1,8 @@
 # l10n-kosovo
-incubator for Koovo localization
+
+Kosovo localization
+===================
+
+
+Some modules developed for Kosovo localization project
+data is not production ready 
