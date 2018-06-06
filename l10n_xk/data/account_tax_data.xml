@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+         <!-- Tax template for sale and purchase -->
+        <record id="tax_sale_tmpl_tvsh18" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+            <field name="sequence">10</field>
+            <field name="name">TVSH 18%</field>
+            <field name="amount">18</field>
+            <field name="type_tax_use">sale</field>
+            <field name="account_id" ref="account_1401"/>
+            <field name="refund_account_id" ref="account_1401"/>
+        </record>
+        <record id="tax_sale_tmpl_tvsh8" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+            <field name="sequence">15</field>
+            <field name="name">TVSH 8%</field>
+            <field name="amount">8</field>
+            <field name="type_tax_use">sale</field>
+            <field name="account_id" ref="account_1402"/>
+            <field name="refund_account_id" ref="account_1402"/>
+        </record>
+        <record id="tax_sale_tmpl_tvsh_rc" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+            <field name="sequence">20</field>
+            <field name="name">Rev.Ch.</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">sale</field>
+            <field name="account_id"/>
+            <field name="refund_account_id" />
+        </record>
+        <record id="tax_sale_tmpl_tvsh_exp" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+            <field name="sequence">25</field>
+            <field name="name">Export.51</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">sale</field>
+            <field name="account_id" />
+            <field name="refund_account_id" />
+        </record>
+
+        <record id="tax_purch_tmpl_tvsh18" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+            <field name="name">Purchase TVSH 18%</field>
+            <field name="sequence">10</field>
+            <field name="amount">18</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="account_id" ref="account_2401"/>
+            <field name="refund_account_id" ref="account_2401"/>
+        </record>
+        <record id="tax_purch_tmpl_tvsh8" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+            <field name="name">Purchase TVSH 8%</field>
+            <field name="sequence">15</field>
+            <field name="amount">8</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="account_id" ref="account_2402"/>
+            <field name="refund_account_id" ref="account_2402"/>
+        </record>
+        <record id="tax_purch_tmpl_rc" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+            <field name="name">In.Rev.Ch.</field>
+            <field name="sequence">20</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">purchase</field>
+            <!--<field name="account_id" ref="conf_ova"/>-->
+            <!--<field name="refund_account_id" ref="conf_ova"/>-->
+        </record>
+
+        <record id="tax_purch_tmpl_notax" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+            <field name="name">NoTax</field>
+            <field name="sequence">20</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">purchase</field>
+            <!--<field name="account_id" ref="conf_ova"/>-->
+            <!--<field name="refund_account_id" ref="conf_ova"/>-->
+        </record>
+        <record id="tax_purch_tmpl_for0" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+            <field name="name">Purchase Foregin</field>
+            <field name="sequence">25</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">purchase</field>
+            <!--<field name="account_id" ref="conf_ova"/>-->
+            <!--<field name="refund_account_id" ref="conf_ova"/>-->
+        </record>
+    </data>
+</odoo>

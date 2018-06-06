@@ -1,0 +1,4 @@
+ taxes :
+ - not in tax system (0%tvsh)
+ - insurance - tax relive
+ - ura 56 - Ngarkesa e kundert , par. 1.4.1 ose 1.4.2 i nenit 52 - Ligjit per TVSH Kosove

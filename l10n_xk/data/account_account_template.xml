@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- 0 asset -->
+        <record id="account_0120" model="account.account.template">
+            <field name="code" eval="0120"/>
+            <field name="name">Investment in software</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_0300" model="account.account.template">
+            <field name="code" eval="0300"/>
+            <field name="name">Technical plant</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_0301" model="account.account.template">
+            <field name="code" eval="0301"/>
+            <field name="name">Technical plant improovments / addons</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_0305" model="account.account.template">
+            <field name="code" eval="0305"/>
+            <field name="name">Tools</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_0310" model="account.account.template">
+            <field name="code" eval="0310"/>
+            <field name="name">Equipment for office</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_0311" model="account.account.template">
+            <field name="code" eval="0311"/>
+            <field name="name">IT equipment</field>
+            <field name="reconcile" eval="False" />
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_0316" model="account.account.template">
+            <field name="code" eval="0316"/>
+            <field name="name">Building equipment - formwork, cranes</field>
+            <field name="reconcile" eval="False" />
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <!--<record id="account_0390" model="account.account.template">-->
+            <!--<field name="code" eval="0390"/>-->
+            <!--<field name="name">Accumulated depreciation of equipment</field>-->
+            <!--<field name="reconcile">0</field>-->
+            <!--<field name="user_type_id" ref="account.data_account_type_depreciation"/>-->
+            <!--<field name="chart_template_id" ref="l10n_xk_chart_template"/>-->
+        <!--</record>-->
+        <!--1 bank and cash -->
+        <record id="account_1000" model="account.account.template">
+            <field name="code" eval="1000"/>
+            <field name="name">Bank account (analytic per banks)</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_1020" model="account.account.template">
+            <field name="code" eval="1020"/>
+            <field name="name">Cash on hand</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_1050" model="account.account.template">
+            <field name="code" eval="1050"/>
+            <field name="name">Income from currency exchange</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+
+        <!-- 1.2 Receivable accounts -->
+        <record id="account_1200" model="account.account.template">
+            <field name="code" eval="1200"/>
+            <field name="name">Trade receivables - Customers</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_receivable"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_1210" model="account.account.template">
+            <field name="code" eval="1210"/>
+            <field name="name">Trade receivables - customers from EU</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_receivable"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_1220" model="account.account.template">
+            <field name="code" eval="1220"/>
+            <field name="name">Trade receivables - NON EU customers</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_receivable"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_1250" model="account.account.template">
+            <field name="code" eval="1250"/>
+            <field name="name">Prepayments with tax</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_prepayments"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_1251" model="account.account.template">
+            <field name="code" eval="1251"/>
+            <field name="name">Prepayments - Reverse Charge</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_prepayments"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <!-- 14 receivables from the govenment for taxes -->
+        <record id="account_1401" model="account.account.template">
+            <field name="code" eval="1401"/>
+            <field name="name">Sale TVSH 18%</field>
+            <field name="reconcile">1</field>
+            <!-- TODO: check type -->
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_1402" model="account.account.template">
+            <field name="code" eval="1402"/>
+            <field name="name">Sale TVSH 8%</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <!-- 22. payable accounts -->
+         <record id="account_2200" model="account.account.template">
+            <field name="code" eval="2200"/>
+            <field name="name">Trade payable - Suppliers</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_2210" model="account.account.template">
+            <field name="code" eval="2210"/>
+            <field name="name">Trade payable - Suppliers from EU</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_2220" model="account.account.template">
+            <field name="code" eval="2220"/>
+            <field name="name">Trade payable - NON EU Suppliers</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_2250" model="account.account.template">
+            <field name="code" eval="2250"/>
+            <field name="name">Prepayments received with tax</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_prepayments"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_2251" model="account.account.template">
+            <field name="code" eval="2251"/>
+            <field name="name">Prepayments received - Reverse Charge</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_prepayments"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <!-- 24 current liabilities for taxes -->
+        <record id="account_2401" model="account.account.template">
+            <field name="code" eval="2401"/>
+            <field name="name">Purchase TVSH 18%</field>
+            <field name="reconcile">1</field>
+            <!-- TODO: check type -->
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_2402" model="account.account.template">
+            <field name="code" eval="2402"/>
+            <field name="name">Purchase TVSH 8%</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <!-- 3- inventory adjustment -->
+        <!-- 4 Cost of revenue -->
+        <record id="account_4000" model="account.account.template">
+            <field name="code" eval="4000"/>
+            <field name="name">Cost of basic materials</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4003" model="account.account.template">
+            <field name="code" eval="4003"/>
+            <field name="name">Consumable materials - oil, filters, discs</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4005" model="account.account.template">
+            <field name="code" eval="4005"/>
+            <field name="name">Safety wear costs</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4010" model="account.account.template">
+            <field name="code" eval="4010"/>
+            <field name="name">Office consumable materials</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4015" model="account.account.template">
+            <field name="code" eval="4015"/>
+            <field name="name">Work uniform wareables</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4040" model="account.account.template">
+            <field name="code" eval="4040"/>
+            <field name="name">Small inventory costs</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4050" model="account.account.template">
+            <field name="code" eval="4050"/>
+            <field name="name">Consumables for equipment service and repair</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4077" model="account.account.template">
+            <field name="code" eval="4077"/>
+            <field name="name">Fuel for machinery (trucks, escavators, cranes etc)</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4080" model="account.account.template">
+            <field name="code" eval="4080"/>
+            <field name="name">Sample testing, QA, certification expenses</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4100" model="account.account.template">
+            <field name="code" eval="4100"/>
+            <field name="name">Telecomunication costs - phone, internet...</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4102" model="account.account.template">
+            <field name="code" eval="4102"/>
+            <field name="name">Road transportation costs</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4105" model="account.account.template">
+            <field name="code" eval="4105"/>
+            <field name="name">Plain transportation costs / Flight tickets</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4754" model="account.account.template">
+            <field name="code" eval="4754"/>
+            <field name="name">Curency exchage losses</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4999" model="account.account.template">
+            <field name="code" eval="4999"/>
+            <field name="name">Other expenses</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_7500" model="account.account.template">
+            <field name="code" eval="7500"/>
+            <field name="name">Regular income from sales</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+
+        <!-- chart template -->
+        <record id="l10n_xk_chart_template" model="account.chart.template">
+            <field name="property_account_receivable_id" ref="account_1200"/>
+            <field name="property_account_payable_id" ref="account_2200"/>
+            <field name="property_account_expense_categ_id" ref="account_4999"/>
+            <field name="property_account_income_categ_id" ref="account_7500"/>
+            <!--<field name="property_stock_account_input_categ_id" ref="conf_cas_interim1"/>-->
+            <!--<field name="property_stock_account_output_categ_id" ref="conf_cas_interim2"/>-->
+            <!--<field name="property_stock_valuation_account_id" ref="conf_cas"/>-->
+            <field name="income_currency_exchange_account_id" ref="account_1050"/>
+            <field name="expense_currency_exchange_account_id" ref="account_4754"/>
+        </record>
+
+
+
+    </data>
+</odoo>

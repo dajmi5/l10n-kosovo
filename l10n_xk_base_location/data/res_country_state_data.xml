@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!--
+        Kosovo
+        -->
+        <record id="state_xk_pristina" model="res.country.state">
+            <field name="country_id" ref="base.xk"/>
+            <field name="name">District of Pristina</field>
+            <field name="code">10</field>
+        </record>
+        <record id="state_xk_gjilan" model="res.country.state">
+            <field name="country_id" ref="base.xk"/>
+            <field name="name">District of Gjilan</field>
+            <field name="code">60</field>
+        </record>
+        <record id="state_xk_ferizaj" model="res.country.state">
+            <field name="country_id" ref="base.xk"/>
+            <field name="name">District of Ferizaj</field>
+            <field name="code">70</field>
+        </record>
+        <record id="state_xk_gjakova" model="res.country.state">
+            <field name="country_id" ref="base.xk"/>
+            <field name="name">District of Gjakova</field>
+            <field name="code">50</field>
+        </record>
+        <record id="state_xk_mitrovica" model="res.country.state">
+            <field name="country_id" ref="base.xk"/>
+            <field name="name">District of Mitrovica</field>
+            <field name="code">40</field>
+        </record>
+        <record id="state_xk_peja" model="res.country.state">
+            <field name="country_id" ref="base.xk"/>
+            <field name="name">District of Peja</field>
+            <field name="code">30</field>
+        </record>
+        <record id="state_xk_prizren" model="res.country.state">
+            <field name="country_id" ref="base.xk"/>
+            <field name="name">District of Prizren</field>
+            <field name="code">20</field>
+        </record>
+    </data>
+</openerp>

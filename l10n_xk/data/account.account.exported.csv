@@ -1,0 +1,41 @@
+External ID,"Code
+             (code)","Display Name
+             (display_name)","ID
+             (.id)","Internal Notes
+             (note)","Internal Type
+             (internal_type)","Name
+             (name)","Tags
+             (tag_ids)","Type
+             (user_type_id)","Type/Account Type
+             (user_type_id/name)","Type/Bring Accounts Balance Forward
+             (user_type_id/include_initial_balance)","Type/Display Name
+             (user_type_id/display_name)"
+l10n_xk.4_conf_xfa,100000,100000 Fixed Asset Account,1639,,other,Fixed Asset Account,,account.data_account_type_fixed_assets,Fixed Assets,True,Fixed Assets
+l10n_xk.4_conf_stk,101000,101000 Current Assets,1640,,other,Current Assets,,account.data_account_type_current_assets,Current Assets,True,Current Assets
+l10n_xk.4_conf_cas,101110,101110 Stock Valuation Account,1641,,other,Stock Valuation Account,,account.data_account_type_current_assets,Current Assets,True,Current Assets
+l10n_xk.4_conf_cas_interim1,101120,101120 Stock Interim Account (Received),1642,,other,Stock Interim Account (Received),,account.data_account_type_current_assets,Current Assets,True,Current Assets
+l10n_xk.4_conf_cas_interim2,101130,101130 Stock Interim Account (Delivered),1643,,other,Stock Interim Account (Delivered),,account.data_account_type_current_assets,Current Assets,True,Current Assets
+l10n_xk.4_conf_a_recv,101200,101200 Account Receivable,1644,,receivable,Account Receivable,,account.data_account_type_receivable,Receivable,True,Receivable
+l10n_xk.4_conf_ova,101300,101300 Tax Paid,1645,,other,Tax Paid,,account.data_account_type_current_assets,Current Assets,True,Current Assets
+__export__.account_account_1665,101401,101401 Bank,1665,,liquidity,Bank,,account.data_account_type_liquidity,Bank and Cash,True,Bank and Cash
+__export__.account_account_1664,101501,101501 Cash,1664,,liquidity,Cash,,account.data_account_type_liquidity,Bank and Cash,True,Bank and Cash
+l10n_xk.4_conf_o_income,101600,101600 Opening Income Account,1646,,other,Opening Income Account,,account.data_account_type_other_income,Other Income,False,Other Income
+l10n_xk.4_transfer_account_id,101700,101700 Liquidity Transfers,1638,,other,Liquidity Transfers,,account.data_account_type_current_assets,Current Assets,True,Current Assets
+l10n_xk.4_conf_ncas,102000,102000 Non-current assets,1647,,other,Non-current assets,,account.data_account_type_non_current_assets,Non-current Assets,True,Non-current Assets
+l10n_xk.4_conf_prepayments,103000,103000 Prepayments,1648,,other,Prepayments,,account.data_account_type_prepayments,Prepayments,True,Prepayments
+l10n_xk.4_current_liabilities,111000,111000 Current Liabilities,1649,,other,Current Liabilities,,account.data_account_type_current_liabilities,Current Liabilities,True,Current Liabilities
+l10n_xk.4_conf_a_pay,111100,111100 Account Payable,1650,,payable,Account Payable,,account.data_account_type_payable,Payable,True,Payable
+l10n_xk.4_conf_iva,111200,111200 Tax Received,1651,,other,Tax Received,,account.data_account_type_current_liabilities,Current Liabilities,True,Current Liabilities
+l10n_xk.4_conf_a_reserve_and_surplus,111300,111300 Reserve and Profit/Loss Account,1652,,other,Reserve and Profit/Loss Account,,account.data_account_type_current_liabilities,Current Liabilities,True,Current Liabilities
+l10n_xk.4_cas,112000,112000 Non-current Liabilities,1653,,other,Non-current Liabilities,,account.data_account_type_non_current_liabilities,Non-current Liabilities,True,Non-current Liabilities
+l10n_xk.4_conf_a_sale,200000,200000 Product Sales,1654,,other,Product Sales,account.account_tag_operating,account.data_account_type_revenue,Income,False,Income
+l10n_xk.4_exchange_fx_income,201000,201000 Foreign Exchange Gain,1657,,other,Foreign Exchange Gain,account.account_tag_financing,account.data_account_type_revenue,Income,False,Income
+l10n_xk.4_conf_cog,210000,210000 Cost of Revenue,1655,,other,Cost of Revenue,account.account_tag_operating,account.data_account_type_direct_costs,Cost of Revenue,False,Cost of Revenue
+l10n_xk.4_exchange_fx_expense,211000,211000 Foreign Exchange Loss,1658,,other,Foreign Exchange Loss,account.account_tag_financing,account.data_account_type_expenses,Expenses,False,Expenses
+l10n_xk.4_a_salary_expense,212100,212100 Salary Expenses,1659,,other,Salary Expenses,account.account_tag_operating,account.data_account_type_expenses,Expenses,False,Expenses
+l10n_xk.4_a_expense_invest,212200,212200 Purchase of Equipments,1660,,other,Purchase of Equipments,account.account_tag_investing,account.data_account_type_expenses,Expenses,False,Expenses
+l10n_xk.4_a_expense_finance,212300,212300 Bank Fees,1661,,other,Bank Fees,account.account_tag_financing,account.data_account_type_expenses,Expenses,False,Expenses
+l10n_xk.4_conf_a_expense,220000,220000 Expenses,1656,,other,Expenses,account.account_tag_operating,account.data_account_type_expenses,Expenses,False,Expenses
+l10n_xk.4_a_capital,300100,300100 Capital,1662,,other,Capital,,account.data_account_type_equity,Equity,True,Equity
+l10n_xk.4_a_dividends,300200,300200 Dividends,1663,,other,Dividends,,account.data_account_type_equity,Equity,True,Equity
+__export__.account_account_1666,999999,999999 Undistributed Profits/Losses,1666,,other,Undistributed Profits/Losses,,account.data_unaffected_earnings,Current Year Earnings,True,Current Year Earnings

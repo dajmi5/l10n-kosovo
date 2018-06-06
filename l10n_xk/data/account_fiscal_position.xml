@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="fiscal_position_regular" model="account.fiscal.position.template">
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+            <field name="name">Regular</field>
+        </record>
+        <record id="fiscal_position_foreign" model="account.fiscal.position.template">
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+            <field name="name">Foregin</field>
+            <field name="note"></field>
+        </record>
+        <record id="fiscal_position_revcharge" model="account.fiscal.position.template">
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+            <field name="name">Rev.Charge</field>
+            <field name="note">paragraph 1.2.1 and 1.4.2 TVSH Kosove</field>
+        </record>
+        <record id="fiscal_position_no_tvsh" model="account.fiscal.position.template">
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+            <field name="name">NOTVSH</field>
+            <field name="note">Not in TVSH system</field>
+        </record>
+
+
+        <!-- foreign : taxes -->
+        <record id="fp_foregin_purchase_18" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_foreign"/>
+            <field name="tax_src_id" ref="tax_purch_tmpl_tvsh18"/>
+            <field name="tax_dest_id" ref="tax_purch_tmpl_for0"/>
+        </record>
+        <record id="fp_foregin_purchase_8" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_foreign"/>
+            <field name="tax_src_id" ref="tax_purch_tmpl_tvsh8"/>
+            <field name="tax_dest_id" ref="tax_purch_tmpl_for0"/>
+        </record>
+        <record id="fp_foregin_sale_18" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_foreign"/>
+            <field name="tax_src_id" ref="tax_sale_tmpl_tvsh18"/>
+            <field name="tax_dest_id" ref="tax_sale_tmpl_tvsh_exp"/>
+        </record>
+        <record id="fp_foregin_sale_8" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_foreign"/>
+            <field name="tax_src_id" ref="tax_sale_tmpl_tvsh8"/>
+            <field name="tax_dest_id" ref="tax_sale_tmpl_tvsh_exp"/>
+        </record>
+
+        <!-- reverse charge -->
+        <record id="fp_revcharge_purch_18" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_revcharge"/>
+            <field name="tax_src_id" ref="tax_purch_tmpl_tvsh18"/>
+            <field name="tax_dest_id" ref="tax_purch_tmpl_rc"/>
+        </record>
+        <record id="fp_revcharge_purch_8" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_revcharge"/>
+            <field name="tax_src_id" ref="tax_purch_tmpl_tvsh8"/>
+            <field name="tax_dest_id" ref="tax_purch_tmpl_rc"/>
+        </record>
+        <!--<record id="fp_revcharge_sale_18" model="account.fiscal.position.tax.template">-->
+            <!--<field name="position_id" ref="fiscal_position_revcharge"/>-->
+            <!--<field name="tax_src_id" ref="tax_sale_tmpl_tvsh18"/>-->
+            <!--<field name="tax_dest_id" ref="tax_sale_tmpl_rc"/>-->
+        <!--</record>-->
+        <!--<record id="fp_revcharge_sale_8" model="account.fiscal.position.tax.template">-->
+            <!--<field name="position_id" ref="fiscal_position_revcharge"/>-->
+            <!--<field name="tax_src_id" ref="tax_sale_tmpl_tvsh8"/>-->
+            <!--<field name="tax_dest_id" ref="tax_sale_tmpl_rc"/>-->
+        <!--</record>-->
+
+    </data>
+</odoo>
