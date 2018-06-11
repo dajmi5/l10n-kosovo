@@ -271,6 +271,13 @@
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
             <field name="chart_template_id" ref="l10n_xk_chart_template"/>
         </record>
+        <record id="account_4167" model="account.account.template">
+            <field name="code" eval="4167"/>
+            <field name="name">Lawyer, notary public and legal acts cost</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
         <record id="account_4754" model="account.account.template">
             <field name="code" eval="4754"/>
             <field name="name">Curency exchage losses</field>
