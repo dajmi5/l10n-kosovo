@@ -271,6 +271,27 @@
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
             <field name="chart_template_id" ref="l10n_xk_chart_template"/>
         </record>
+        <record id="account_4115" model="account.account.template">
+            <field name="code" eval="4115"/>
+            <field name="name">Accomodation cost (hotel) for field workers</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4163" model="account.account.template">
+            <field name="code" eval="4163"/>
+            <field name="name">Consultants and advisers fees</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4164" model="account.account.template">
+            <field name="code" eval="4164"/>
+            <field name="name">Book keeping, Tax accounting cost</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
         <record id="account_4167" model="account.account.template">
             <field name="code" eval="4167"/>
             <field name="name">Lawyer, notary public and legal acts cost</field>
