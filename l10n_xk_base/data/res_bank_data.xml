@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <!-- Kosovo banks, to be removed to l10n_xk_base, once... -->
+        <record id="res_bank_xk_central" model="res.bank">
+            <field name="country" ref="base.xk"/>
+            <field name="vbb_code"></field>
+            <field name="bic">CBRK XK PR</field>
+            <field name="name">CENTRAL BANK OF THE REPUBLIC OF KOSOVO</field>
+            <field name="zip">10000</field>
+            <field name="city">Prishtinë</field>
+            <field name="street">33 GARIBALDI STREET</field>
+        </record>
         <record id="res_bank_xk_rba" model="res.bank">
             <field name="country" ref="base.xk"/>
             <field name="vbb_code"></field>
