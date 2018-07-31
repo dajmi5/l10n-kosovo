@@ -73,6 +73,13 @@
             <field name="user_type_id" ref="account.data_account_type_liquidity"/>
             <field name="chart_template_id" ref="l10n_xk_chart_template"/>
         </record>
+        <record id="account_1029" model="account.account.template">
+            <field name="code" eval="1029"/>
+            <field name="name">Temp / Transfer account</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
         <record id="account_1050" model="account.account.template">
             <field name="code" eval="1050"/>
             <field name="name">Income from currency exchange</field>
@@ -112,7 +119,7 @@
         </record>
         <record id="account_1251" model="account.account.template">
             <field name="code" eval="1251"/>
-            <field name="name">Prepayments - Reverse Charge</field>
+            <field name="name">Prepayments - Reverse Charge/no tax</field>
             <field name="reconcile">1</field>
             <field name="user_type_id" ref="account.data_account_type_prepayments"/>
             <field name="chart_template_id" ref="l10n_xk_chart_template"/>
@@ -167,6 +174,27 @@
             <field name="name">Prepayments received - Reverse Charge</field>
             <field name="reconcile">1</field>
             <field name="user_type_id" ref="account.data_account_type_prepayments"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_2300" model="account.account.template">
+            <field name="code" eval="2300"/>
+            <field name="name">Netto payroll liabilities</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_2340" model="account.account.template">
+            <field name="code" eval="2340"/>
+            <field name="name">Liabilities for insurance</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_2430" model="account.account.template">
+            <field name="code" eval="2430"/>
+            <field name="name">Liabilities for income tax</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_xk_chart_template"/>
         </record>
         <!-- 24 current liabilities for taxes -->
@@ -285,6 +313,13 @@
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
             <field name="chart_template_id" ref="l10n_xk_chart_template"/>
         </record>
+        <record id="account_4125" model="account.account.template">
+            <field name="code" eval="4125"/>
+            <field name="name">Vehicle repairs service</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
         <record id="account_4128" model="account.account.template">
             <field name="code" eval="4128"/>
             <field name="name">Security service - guarding inventory and personell</field>
@@ -302,6 +337,13 @@
         <record id="account_4141" model="account.account.template">
             <field name="code" eval="4141"/>
             <field name="name">Equipment rental costs</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_4146" model="account.account.template">
+            <field name="code" eval="4146"/>
+            <field name="name">Rent-a-Car costs</field>
             <field name="reconcile">1</field>
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
             <field name="chart_template_id" ref="l10n_xk_chart_template"/>
@@ -334,6 +376,13 @@
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
             <field name="chart_template_id" ref="l10n_xk_chart_template"/>
         </record>
+        <record id="account_4646" model="account.account.template">
+            <field name="code" eval="4646"/>
+            <field name="name">Foreign workers insurance cost</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
         <record id="account_4754" model="account.account.template">
             <field name="code" eval="4754"/>
             <field name="name">Curency exchage losses</field>
@@ -346,6 +395,27 @@
             <field name="name">Other expenses</field>
             <field name="reconcile">0</field>
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_7010" model="account.account.template">
+            <field name="code" eval="7030"/>
+            <field name="name">Costs of rendering services</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_7030" model="account.account.template">
+            <field name="code" eval="7030"/>
+            <field name="name">Cost of raw materials and consumables sold</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
+        <record id="account_7130" model="account.account.template">
+            <field name="code" eval="7130"/>
+            <field name="name">Cost of raw materials and consumables sold</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
             <field name="chart_template_id" ref="l10n_xk_chart_template"/>
         </record>
         <record id="account_7500" model="account.account.template">
