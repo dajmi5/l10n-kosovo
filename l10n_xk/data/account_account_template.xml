@@ -306,6 +306,13 @@
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
             <field name="chart_template_id" ref="l10n_xk_chart_template"/>
         </record>
+        <record id="account_4111" model="account.account.template">
+            <field name="code" eval="4111"/>
+            <field name="name">Services of subcontractors on joint services to third parties</field>
+            <field name="reconcile">0</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
         <record id="account_4115" model="account.account.template">
             <field name="code" eval="4115"/>
             <field name="name">Accomodation cost (hotel) for field workers</field>
@@ -369,7 +376,7 @@
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
             <field name="chart_template_id" ref="l10n_xk_chart_template"/>
         </record>
-         <record id="account_4645" model="account.account.template">
+        <record id="account_4645" model="account.account.template">
             <field name="code" eval="4645"/>
             <field name="name">Residence permits cost</field>
             <field name="reconcile">0</field>
@@ -398,7 +405,7 @@
             <field name="chart_template_id" ref="l10n_xk_chart_template"/>
         </record>
         <record id="account_7010" model="account.account.template">
-            <field name="code" eval="7030"/>
+            <field name="code" eval="7010"/>
             <field name="name">Costs of rendering services</field>
             <field name="reconcile">1</field>
             <field name="user_type_id" ref="account.data_account_type_revenue"/>
@@ -438,8 +445,5 @@
             <field name="income_currency_exchange_account_id" ref="account_1050"/>
             <field name="expense_currency_exchange_account_id" ref="account_4754"/>
         </record>
-
-
-
     </data>
 </odoo>
