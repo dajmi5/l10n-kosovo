@@ -376,6 +376,13 @@
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
             <field name="chart_template_id" ref="l10n_xk_chart_template"/>
         </record>
+        <record id="account_4194" model="account.account.template">
+            <field name="code" eval="4194"/>
+            <field name="name">Freight forwarder costs</field>
+            <field name="reconcile">1</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_xk_chart_template"/>
+        </record>
         <record id="account_4645" model="account.account.template">
             <field name="code" eval="4645"/>
             <field name="name">Residence permits cost</field>
